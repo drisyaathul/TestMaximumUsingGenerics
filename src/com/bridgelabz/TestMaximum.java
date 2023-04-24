@@ -28,6 +28,18 @@ public class TestMaximum {
             maximum = z;
         System.out.println(maximum+ " is the maximum of Three Floats");
     }
+    private static void maxOfThreeStrings(String x, String y, String z) {
+ /*
+    find the maximum of three Strings
+    CompareTo method to test the maximum
+ */
+        String maximum = x;
+        if (y.compareTo(maximum) > 0)
+            maximum = y;
+        if (z .compareTo(maximum) > 0)
+            maximum = z;
+        System.out.println(maximum+ " is the maximum of Three Strings");
+    }
     public static void main(String[] args) {
 
         System.out.println(" *** Maximum Of 3 Variables *** ");
@@ -51,5 +63,15 @@ public class TestMaximum {
         maxOfThreeFloats(3.82f,5.69f,1.2f);
         //TC1.3: Given MaximumNumber at third position
         maxOfThreeFloats(2.53f,3.25f,7.6f);
+        /*
+            Find the maximum of three Strings
+         */
+        System.out.println("Maximum of Three Strings :-");
+        //TC1.1: Given Maximum at first position
+        maxOfThreeStrings("Peach","Banana", "Apple");
+        //TC1.2: Given Maximum at second position
+        maxOfThreeStrings("Apple","Peach", "Banana");
+        //TC1.3: Given Maximum at third position
+        maxOfThreeStrings("Banana","Apple", "Peach");
     }
 }
