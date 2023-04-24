@@ -26,7 +26,7 @@ public class TestMaximum {
             maximum = y;
         if (z .compareTo(maximum) > 0)
             maximum = z;
-        System.out.println(maximum+ " is the maximum of Three Integers");
+        System.out.println(maximum+ " is the maximum of Three Floats");
     }
     public static void main(String[] args) {
 
